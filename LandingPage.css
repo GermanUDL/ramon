@@ -1,0 +1,506 @@
+
+/*********/
+/*GENERAL*/
+/*********/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/********/
+/*HEADER*/
+/********/
+header{
+    height: calc(3em + 2vw);
+    background-color: rgb(0, 25, 105);
+}
+
+header div{
+    width: 80%;
+    height: 100%;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6%;
+}
+
+header img.Logo{
+    width: calc(2.3em + 1vw);
+    border-radius: 50%;
+    margin-right: 1em;
+    border: 1px solid rgb(0, 195, 209);
+}
+
+header img.Carrito{
+    width: calc(1.4em + 1vw);
+    border: 0.18em solid rgb(0, 195, 209);
+    border-radius: 50% ; 
+    margin-left: 1%;
+    margin-bottom: 1em;
+}
+
+header h1{
+    width: 36%;
+    color: rgb(255, 255, 255);
+    font-size: calc(0.9em + 1vw);
+    text-decoration: underline solid rgb(0, 195, 209);
+}
+
+
+
+/*****/
+/*NAV*/
+/*****/
+nav{
+    background-color: rgb(0, 25, 105);
+    height: calc(3em + 1vw);
+}
+
+nav div{
+    /*background-color: aquamarine;*/
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+nav ul{
+    margin-top: 0.1em;
+    text-align: center;
+    height: 90%;
+    /*background-color: black;*/
+}
+
+nav ul li{
+    display: inline-flex;
+    justify-self: unset;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    border: 0.18em solid rgb(0, 195, 209);
+    margin-top: 1em;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+nav a :hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+nav ul li a h2{
+    font-size: calc(0.4em + 0.9vw);
+}
+
+
+/********/
+/*SLIDER*/
+/********/
+.Slider{
+    background-color: rgb(0, 195, 209);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 3%;
+    border: 1px solid black;
+}
+
+.Slider ul{
+    padding: 0;
+    display: flex;
+    width: 300%;
+
+    animation: deslizar 18s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.Slider ul li{
+    list-style: none;
+    width: 100%;
+}
+
+.Slider ul li img{
+    width: 100%;
+}
+
+@keyframes deslizar {
+    0% {margin-left: 0;}
+    26% {margin-left: 0;}
+
+    36% {margin-left: -100%;}
+    62% {margin-left: -100%;}
+
+    73% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+
+
+/*********************/
+/*SECTION - PREGUNTES*/
+/*      + ASIDE      */
+/*********************/
+section.Preguntes {
+    display: flex;
+}
+
+.QuiSom{ 
+    /*background-color: rgb(0, 25, 105);*/
+    padding: 2%;
+    width: 40%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.QuiSom div{
+    background-color: rgb(0, 195, 209);
+    border: 1px solid rgb(8, 8, 8);
+}
+
+.QuiSom h3{
+    background-color: rgb(0, 25, 105);
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: calc(0.7em + 1vw);
+    margin-bottom: 1em;
+    padding: 0.2em;
+    text-align: center;
+    border: 1px solid black;
+    color: aliceblue;
+}
+
+.QuiSom img{ 
+    width: calc(10% + 4vw);
+    float: right;
+    margin-left: calc(0.2em + 1vw);
+    margin-right: calc(0.2em + 1vw);
+    margin-bottom: calc(0.2em + 1vw);
+    border: 1px solid black;
+}
+
+.QuiSom p{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: calc(0.3em + 1vw);
+    margin: calc(0.2em + 1vw);
+}
+
+.QueFem{
+    /*background-color: rgb(0, 25, 105);*/
+    padding: 2%;
+    width: 40%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+
+.QueFem div{
+    background-color: rgb(0, 195, 209);
+    border: 1px solid black;
+}
+
+.QueFem h3{
+    background-color: rgb(0, 25, 105);
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: calc(0.7em + 1vw);
+    margin-bottom: 1em;
+    padding: 0.2em;
+    text-align: center;
+    border: 1px solid black;
+    color: aliceblue;
+}
+
+.QueFem img{
+    width: calc(10% + 4vw);
+    float: left;
+    margin-left: calc(0.2em + 1vw);
+    margin-right: calc(0.2em + 1vw);
+    margin-bottom: calc(0.2em + 1vw);
+}
+
+.QueFem p{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: calc(0.3em + 1vw);
+    margin: calc(0.2em + 1vw);
+}
+
+section.Preguntes aside{
+    width: 9%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    background-color: rgb(255, 239, 188);
+    margin-left: 3%;
+    align-self: center;
+}
+
+.Preguntes aside div{
+    text-align: center;
+}
+
+section.Preguntes aside div img{
+    width: 48%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+section.Preguntes aside div p{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: calc(0.2em + 0.7vw);
+    color: rgb(39, 36, 36);
+}
+
+
+
+/*******************/
+/*SECTION - GALERIA*/
+/*******************/
+section.Galeria{
+    /*background-color: rgb(255, 246, 228);*/
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+section.Galeria h3{
+    background-color: rgb(0, 25, 105);
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', sans-serif;
+    font-size: calc(0.6em + 1vw);
+    border: 1px solid black;
+    color: aliceblue;
+}
+
+section.Galeria div.Macaco{
+    height: 28vw;
+}
+
+section.Galeria div.Orangutan{
+    height: 28vw;
+}
+
+section.Galeria div.Gorila{
+    height: 28vw;
+}
+
+section.Galeria h4{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', sans-serif;
+    font-size: calc(0.2em + 1vw);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+section.Galeria h4.h4Macaco{
+    background-color: rgb(0, 33, 143);
+    width: 33.33%;
+    float: left;
+    color: aliceblue;
+}
+
+.Galeria h4.h4Orangutan{
+    background-color: rgb(0, 29, 124);
+    width: 33.33%;
+    float: left;
+    color: aliceblue;
+}
+
+.Galeria h4.h4Gorila{
+    background-color: rgb(0, 33, 143);
+    width: 33.33%;
+    float: left;
+    color: aliceblue;
+}
+
+/*Imatges Galeria*/
+div.Macaco{
+    background-color: rgb(0, 195, 209);
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+div.Macaco img{
+    opacity: 0; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+div.Macaco img:target{
+    opacity: 1; 
+}
+
+div.Orangutan{
+    background-color: rgb(0, 168, 180);
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+div.Orangutan img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+div.Orangutan img:target{
+    opacity: 1;
+}
+
+div.Gorila{
+    background-color: rgb(0, 195, 209);
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+div.Gorila img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+div.Gorila img:target{
+    opacity: 1;
+}
+
+/*Botons Menú Galeria*/
+div.MenuSliderGaleria{    
+    /*background-color: brown;*/
+    height: 4.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: calc(1em + 1.2vw);
+}
+
+div.MenuSliderGaleria ul{
+    display: inline-flex;
+    background-color: wheat;
+    height: calc(1.5em + 1.5vw);
+    align-items: center;
+}
+
+div.MenuSliderGaleria ul.MenuMacaco{
+    width: 30%;
+    border: 1px solid black;
+}
+
+div.MenuSliderGaleria ul.MenuOrangutan{
+    width: 30%;
+    border: 1px solid black;
+    border-left: 0;
+}
+
+div.MenuSliderGaleria ul.MenuGorila{
+    width: 30%;
+    border: 1px solid black;
+    border-left: 0;
+}
+
+div.MenuSliderGaleria li{
+    /*background-color: rgb(255, 154, 247);*/
+    display: flex;
+    width: 100%;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+div.MenuSliderGaleria li a{
+    color: rgb(0, 195, 209);
+    text-decoration: none;
+    background-color: rgb(0, 25, 105);
+    padding-left: calc(0.3em + 0.6vw);
+    padding-right: calc(0.3em + 0.6vw);
+    padding-top: calc(0.3em + 0.5vw);
+    padding-bottom: calc(0.3em + 0.5vw);
+    font-size: 0.6em;
+    border-radius: 42%;
+    border: 0.2em solid rgb(0, 0, 0);
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+div.MenuSliderGaleria a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+/********/
+/*FOOTER*/
+/********/
+footer{
+    background-color: rgb(0, 25, 105);
+    height: calc(4em + 1vw);
+    text-align: center;
+}
+
+/*Xarxes*/
+footer div.Xarxes{
+    display: inline-flex;
+    width: 95%;
+    align-items: end;
+    justify-content: end;
+    
+} 
+
+footer div.Xarxes a{
+    margin-top: 0.3em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+footer div.Xarxes img{
+    width: calc(1.1em + 1vw);
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+
+div.Xarxes img:hover{
+    background-color: rgb(233, 255, 36);
+}
+
+/*Autors*/
+footer div.Xarxes p.noms{
+    display: block;
+    text-decoration: overline solid red;
+    color: rgb(0, 222, 238);
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: calc(0.3em + 0.4vw);
+    width: 40%;
+    margin-top: 0.4em;
+    margin-bottom: 0.3em;
+}
+
+/*Info Contacte*/
+footer div.info{
+    display: inline-flex;
+    width: 95%;
+    align-items: end;
+    justify-content: end;
+}
+
+footer div.info p{
+    text-decoration: overline solid red;
+    color: rgb(0, 222, 238);
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: calc(0.3em + 0.4vw);
+    width: 65%;
+    margin-bottom: 0.3em;
+    margin-top: 0.4em;
+}
